@@ -23,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   /* .product-image, .product-info {
@@ -90,4 +91,39 @@
     justify-content: center;
     align-items: center;
     color: white;
+  }
+
+  /* REVIEW FORM */
+
+  .review-form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+
+    max-width: 550px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 1px 5px lightgray;
+
+    padding: 1.5rem;
+  }
+
+  .review-form input,
+  .review-form select {
+    height: 2rem;
+  }
+
+  /* REVIEW LIST */
+
+  .review-container,
+  .recommend-container {
+    max-width: 550px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 1px 5px lightgray;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .review-container ul {
+    list-style: none;
   }

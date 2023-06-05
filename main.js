@@ -10,14 +10,11 @@ const app = Vue.createApp({
     this.cart.push(id)
    },
    updateRemoveCart(id) {
-    let result = this.cart.filter(product => {
-      product !== id
-    })
+    let itemIndex = this.cart.indexOf(id)
 
-    console.log("result", result);
-    // console.log(this.cart.filter((item => {
-    //   console.log(id);
-    // })));
+    if(itemIndex !== -1) {
+      this.cart.splice(this.cart.indexOf(id), 1)
+    }
    },
   },
 })
